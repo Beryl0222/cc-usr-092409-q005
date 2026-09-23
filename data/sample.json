@@ -1,0 +1,9 @@
+{
+  "event_id": "092108-008-sample-001",
+  "event_type": "ENROLLMENT_CONFIRMED",
+  "aggregate_type": "child_enrollment",
+  "aggregate_id": "neighborhood_classroom_safeguarding-001",
+  "occurred_at": "2026-09-20T18:00:00+08:00",
+  "version": 1,
+  "summary": "登记邻里课堂安全协作的首条领域记录"
+}
