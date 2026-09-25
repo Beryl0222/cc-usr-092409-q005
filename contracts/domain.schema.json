@@ -23,15 +23,44 @@
         "STAFF_CLEARED",
         "SESSION_REASSIGNED",
         "PICKUP_CHANGED",
-        "CASE_ESCALATED"
+        "CASE_ESCALATED",
+        "SITE_REGISTERED",
+        "SESSION_FROZEN",
+        "SESSION_CLOSED",
+        "GUARDIANSHIP_RECORDED",
+        "DELEGATION_RECORDED",
+        "DELEGATE_WITHDRAWN",
+        "NO_RELEASE_ISSUED",
+        "NO_RELEASE_LIFTED",
+        "EMERGENCY_CONTACTS_RECORDED",
+        "TEMP_CHANGE_VERIFIED",
+        "TEMP_CHANGE_REJECTED",
+        "TEMP_CHANGE_EXPIRED",
+        "CHILD_CHECKED_IN",
+        "CHILD_CHECKED_OUT",
+        "PICKUP_REFUSED",
+        "DELIVERY_FROZEN",
+        "DELIVERY_UNFROZEN",
+        "RECORD_REVISION_VERIFIED",
+        "RECORD_REVISION_REJECTED",
+        "TRANSFER_REQUESTED",
+        "TRANSFER_APPROVED",
+        "TRANSFER_REJECTED",
+        "TRANSFER_COMPLETED",
+        "NOTIFICATION_SENT",
+        "NOTIFICATION_ACKNOWLEDGED"
       ]
     },
     "aggregate_type": {
       "type": "string",
       "enum": [
         "child_enrollment",
+        "site",
         "site_session",
         "staff_assignment",
+        "pickup_policy",
+        "transfer",
+        "notification",
         "safeguarding_case"
       ]
     },
@@ -43,6 +72,10 @@
       "type": "string",
       "format": "date-time"
     },
+    "recorded_at": {
+      "type": "string",
+      "format": "date-time"
+    },
     "version": {
       "type": "integer",
       "minimum": 1
@@ -50,6 +83,9 @@
     "summary": {
       "type": "string",
       "minLength": 1
+    },
+    "payload": {
+      "type": "object"
     }
   },
   "additionalProperties": true

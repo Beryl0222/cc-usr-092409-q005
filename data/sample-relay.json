@@ -1,0 +1,447 @@
+[
+  {
+    "event_id": "evt-9d32e219-a79b-470a-95de-eeaf1b7cb649",
+    "event_type": "SITE_REGISTERED",
+    "aggregate_type": "site",
+    "aggregate_id": "site-a",
+    "occurred_at": "2026-09-25T08:00:00+08:00",
+    "recorded_at": "2026-09-25T22:23:57.090Z",
+    "version": 1,
+    "summary": "登记接送点：甲点",
+    "payload": {
+      "site_id": "site-a",
+      "name": "甲点",
+      "capacity": 10,
+      "supported_needs": [
+        "WHEELCHAIR"
+      ]
+    }
+  },
+  {
+    "event_id": "evt-4e17df2b-54fc-4d2e-b6ea-ae741c9bac86",
+    "event_type": "SITE_REGISTERED",
+    "aggregate_type": "site",
+    "aggregate_id": "site-b",
+    "occurred_at": "2026-09-25T08:00:00+08:00",
+    "recorded_at": "2026-09-25T22:23:57.090Z",
+    "version": 1,
+    "summary": "登记接送点：乙点",
+    "payload": {
+      "site_id": "site-b",
+      "name": "乙点",
+      "capacity": 5,
+      "supported_needs": [
+        "WHEELCHAIR"
+      ]
+    }
+  },
+  {
+    "event_id": "evt-0a15f9a2-dec2-4943-a8d0-9ca821681748",
+    "event_type": "STAFF_CLEARED",
+    "aggregate_type": "staff_assignment",
+    "aggregate_id": "staff-zhang",
+    "occurred_at": "2026-09-25T08:00:00+08:00",
+    "recorded_at": "2026-09-25T22:23:57.090Z",
+    "version": 1,
+    "summary": "工作人员资质审核：张敏",
+    "payload": {
+      "staff_id": "staff-zhang",
+      "name": "张敏",
+      "qualifications": [
+        "FIRST_AID"
+      ],
+      "roles": [
+        "LEAD"
+      ],
+      "valid_until": null
+    }
+  },
+  {
+    "event_id": "evt-2bc2af9a-ec05-4036-b957-b774e910347c",
+    "event_type": "STAFF_CLEARED",
+    "aggregate_type": "staff_assignment",
+    "aggregate_id": "staff-zhao",
+    "occurred_at": "2026-09-25T08:00:00+08:00",
+    "recorded_at": "2026-09-25T22:23:57.090Z",
+    "version": 1,
+    "summary": "工作人员资质审核：赵敏",
+    "payload": {
+      "staff_id": "staff-zhao",
+      "name": "赵敏",
+      "qualifications": [
+        "WHEELCHAIR"
+      ],
+      "roles": [
+        "LEAD"
+      ],
+      "valid_until": null
+    }
+  },
+  {
+    "event_id": "evt-19dd59f4-1722-4830-ac30-bae446fb8585",
+    "event_type": "STAFF_CLEARED",
+    "aggregate_type": "staff_assignment",
+    "aggregate_id": "staff-wang",
+    "occurred_at": "2026-09-25T08:00:00+08:00",
+    "recorded_at": "2026-09-25T22:23:57.090Z",
+    "version": 1,
+    "summary": "工作人员资质审核：王岚",
+    "payload": {
+      "staff_id": "staff-wang",
+      "name": "王岚",
+      "qualifications": [],
+      "roles": [
+        "SAFEGUARDING_LEAD"
+      ],
+      "valid_until": null
+    }
+  },
+  {
+    "event_id": "evt-2cafe9f6-73f1-404c-b126-c42bbfaa6794",
+    "event_type": "ENROLLMENT_CONFIRMED",
+    "aggregate_type": "child_enrollment",
+    "aggregate_id": "child-yu",
+    "occurred_at": "2026-09-25T08:00:00+08:00",
+    "recorded_at": "2026-09-25T22:23:57.091Z",
+    "version": 1,
+    "summary": "登记儿童：小宇",
+    "payload": {
+      "child_id": "child-yu",
+      "name": "小宇",
+      "special_support": [
+        "WHEELCHAIR"
+      ]
+    }
+  },
+  {
+    "event_id": "evt-0a0f272a-b927-4842-bf9d-ebd860ac134f",
+    "event_type": "GUARDIANSHIP_RECORDED",
+    "aggregate_type": "pickup_policy",
+    "aggregate_id": "policy:child-yu:guardianship",
+    "occurred_at": "2026-09-25T08:00:00+08:00",
+    "recorded_at": "2026-09-25T22:23:57.091Z",
+    "version": 1,
+    "summary": "登记监护关系（1 人）",
+    "payload": {
+      "child_id": "child-yu",
+      "guardians": [
+        {
+          "person_id": "mom-yu",
+          "name": "陈静",
+          "relation": "母亲",
+          "phone": "13800000001"
+        }
+      ]
+    }
+  },
+  {
+    "event_id": "evt-3513ed30-d30b-42ef-836b-e3efcc1a1e8d",
+    "event_type": "DELEGATION_RECORDED",
+    "aggregate_type": "pickup_policy",
+    "aggregate_id": "policy:child-yu:delegation",
+    "occurred_at": "2026-09-25T08:00:00+08:00",
+    "recorded_at": "2026-09-25T22:23:57.091Z",
+    "version": 1,
+    "summary": "登记代接范围（1 人）",
+    "payload": {
+      "child_id": "child-yu",
+      "delegates": [
+        {
+          "person_id": "grandpa-yu",
+          "name": "周爷爷",
+          "relation": "祖父",
+          "valid_from": "2026-09-25T16:30:00+08:00",
+          "valid_until": "2026-09-25T17:00:00+08:00"
+        }
+      ]
+    }
+  },
+  {
+    "event_id": "evt-c436100b-a319-416c-b2fe-4db2da1c027a",
+    "event_type": "EMERGENCY_CONTACTS_RECORDED",
+    "aggregate_type": "pickup_policy",
+    "aggregate_id": "policy:child-yu:contacts",
+    "occurred_at": "2026-09-25T08:00:00+08:00",
+    "recorded_at": "2026-09-25T22:23:57.091Z",
+    "version": 1,
+    "summary": "登记紧急联系人（1 人）",
+    "payload": {
+      "child_id": "child-yu",
+      "contacts": [
+        {
+          "person_id": "mom-yu",
+          "name": "陈静",
+          "relation": "母亲",
+          "phone": "13800000001"
+        }
+      ]
+    }
+  },
+  {
+    "event_id": "evt-5da3ae45-d85c-4a8f-946a-5aa0fe917816",
+    "event_type": "SESSION_FROZEN",
+    "aggregate_type": "site_session",
+    "aggregate_id": "sess-a",
+    "occurred_at": "2026-09-25T13:30:00+08:00",
+    "recorded_at": "2026-09-25T22:23:57.091Z",
+    "version": 1,
+    "summary": "冻结课程：甲点 2026-09-25（名册 1 人）",
+    "payload": {
+      "session_id": "sess-a",
+      "site_id": "site-a",
+      "date": "2026-09-25",
+      "window": {
+        "start": "2026-09-25T14:00:00+08:00",
+        "end": "2026-09-25T17:00:00+08:00"
+      },
+      "staff": [
+        {
+          "staff_id": "staff-zhang",
+          "role": "LEAD"
+        }
+      ],
+      "roster": [
+        "child-yu"
+      ],
+      "capacity": 10,
+      "auth_snapshot": {
+        "child-yu": {
+          "guardianship": 1,
+          "delegation": 1,
+          "contacts": 1
+        }
+      }
+    }
+  },
+  {
+    "event_id": "evt-88d1eb72-1a9f-402b-b046-6620b2e635a3",
+    "event_type": "SESSION_FROZEN",
+    "aggregate_type": "site_session",
+    "aggregate_id": "sess-b",
+    "occurred_at": "2026-09-25T13:30:00+08:00",
+    "recorded_at": "2026-09-25T22:23:57.091Z",
+    "version": 1,
+    "summary": "冻结课程：乙点 2026-09-25（名册 0 人）",
+    "payload": {
+      "session_id": "sess-b",
+      "site_id": "site-b",
+      "date": "2026-09-25",
+      "window": {
+        "start": "2026-09-25T14:00:00+08:00",
+        "end": "2026-09-25T17:30:00+08:00"
+      },
+      "staff": [
+        {
+          "staff_id": "staff-zhao",
+          "role": "LEAD"
+        }
+      ],
+      "roster": [],
+      "capacity": 5,
+      "auth_snapshot": {}
+    }
+  },
+  {
+    "event_id": "evt-f0ad4b2d-fc0b-4457-8375-d9b5ab6669f3",
+    "event_type": "CHILD_CHECKED_IN",
+    "aggregate_type": "site_session",
+    "aggregate_id": "sess-a",
+    "occurred_at": "2026-09-25T13:55:00+08:00",
+    "recorded_at": "2026-09-25T22:23:57.092Z",
+    "version": 2,
+    "summary": "儿童签到：child-yu",
+    "payload": {
+      "session_id": "sess-a",
+      "child_id": "child-yu",
+      "received_by": "staff-zhang",
+      "note": null,
+      "stable_id": "checkin:sess-a:child-yu",
+      "status": "EFFECTIVE"
+    }
+  },
+  {
+    "event_id": "evt-43d463ba-3ec7-4470-a6bb-e99c73e8144a",
+    "event_type": "TRANSFER_REQUESTED",
+    "aggregate_type": "transfer",
+    "aggregate_id": "tr-1",
+    "occurred_at": "2026-09-25T14:30:00+08:00",
+    "recorded_at": "2026-09-25T22:23:57.092Z",
+    "version": 1,
+    "summary": "申请跨点调班：child-yu（sess-a → sess-b）",
+    "payload": {
+      "transfer_id": "tr-1",
+      "child_id": "child-yu",
+      "from_session_id": "sess-a",
+      "to_session_id": "sess-b",
+      "reason": "家长临时调到乙点",
+      "requested_by": "mom-yu"
+    }
+  },
+  {
+    "event_id": "evt-d6a8644f-112f-4d0f-8290-fa9a04fe219b",
+    "event_type": "TRANSFER_APPROVED",
+    "aggregate_type": "transfer",
+    "aggregate_id": "tr-1",
+    "occurred_at": "2026-09-25T14:35:00+08:00",
+    "recorded_at": "2026-09-25T22:23:57.092Z",
+    "version": 2,
+    "summary": "调班批准：tr-1",
+    "payload": {
+      "transfer_id": "tr-1",
+      "child_id": "child-yu",
+      "approved_by": "staff-wang",
+      "checks": {
+        "capacity_ok": true,
+        "qualifications_ok": true,
+        "special_needs_ok": true,
+        "headcount_after": 1
+      }
+    }
+  },
+  {
+    "event_id": "evt-e880d9d3-3f7b-4ed8-9aa3-619b7b259595",
+    "event_type": "CHILD_CHECKED_OUT",
+    "aggregate_type": "site_session",
+    "aggregate_id": "sess-a",
+    "occurred_at": "2026-09-25T15:00:00+08:00",
+    "recorded_at": "2026-09-25T22:23:57.093Z",
+    "version": 3,
+    "summary": "调班调出：child-yu",
+    "payload": {
+      "session_id": "sess-a",
+      "child_id": "child-yu",
+      "handed_to": {
+        "type": "TRANSFER",
+        "transfer_id": "tr-1",
+        "escorted_by": "staff-zhang"
+      },
+      "released_by": "staff-zhang",
+      "note": null,
+      "stable_id": "checkout:sess-a:child-yu",
+      "status": "EFFECTIVE"
+    }
+  },
+  {
+    "event_id": "evt-7b88719c-2c46-4efb-a07f-f88aec969c4d",
+    "event_type": "CHILD_CHECKED_IN",
+    "aggregate_type": "site_session",
+    "aggregate_id": "sess-b",
+    "occurred_at": "2026-09-25T15:00:00+08:00",
+    "recorded_at": "2026-09-25T22:23:57.093Z",
+    "version": 2,
+    "summary": "调班调入：child-yu",
+    "payload": {
+      "session_id": "sess-b",
+      "child_id": "child-yu",
+      "received_by": "staff-zhang",
+      "note": null,
+      "via_transfer": "tr-1",
+      "stable_id": "checkin:sess-b:child-yu",
+      "status": "EFFECTIVE"
+    }
+  },
+  {
+    "event_id": "evt-d5c81dab-f114-4a0d-81c8-c9b2b385b752",
+    "event_type": "TRANSFER_COMPLETED",
+    "aggregate_type": "transfer",
+    "aggregate_id": "tr-1",
+    "occurred_at": "2026-09-25T15:00:00+08:00",
+    "recorded_at": "2026-09-25T22:23:57.093Z",
+    "version": 3,
+    "summary": "跨点接力完成：child-yu",
+    "payload": {
+      "transfer_id": "tr-1",
+      "child_id": "child-yu",
+      "from_session_id": "sess-a",
+      "to_session_id": "sess-b",
+      "checkout_event": "evt-e880d9d3-3f7b-4ed8-9aa3-619b7b259595",
+      "checkin_event": "evt-7b88719c-2c46-4efb-a07f-f88aec969c4d",
+      "escorted_by": "staff-zhang"
+    }
+  },
+  {
+    "event_id": "evt-603df042-45cf-4018-a7bf-7538ae051428",
+    "event_type": "SESSION_REASSIGNED",
+    "aggregate_type": "child_enrollment",
+    "aggregate_id": "child-yu",
+    "occurred_at": "2026-09-25T15:00:00+08:00",
+    "recorded_at": "2026-09-25T22:23:57.093Z",
+    "version": 2,
+    "summary": "儿童当日课程变更：child-yu",
+    "payload": {
+      "child_id": "child-yu",
+      "from_session_id": "sess-a",
+      "to_session_id": "sess-b",
+      "transfer_id": "tr-1"
+    }
+  },
+  {
+    "event_id": "evt:ntf:TRANSFER_NOTICE:evt-d5c81dab-f114-4a0d-81c8-c9b2b385b752:mom-yu",
+    "event_type": "NOTIFICATION_SENT",
+    "aggregate_type": "notification",
+    "aggregate_id": "ntf:TRANSFER_NOTICE:evt-d5c81dab-f114-4a0d-81c8-c9b2b385b752:mom-yu",
+    "occurred_at": "2026-09-25T15:00:00+08:00",
+    "recorded_at": "2026-09-25T22:23:57.093Z",
+    "version": 1,
+    "summary": "通知 mom-yu：TRANSFER_NOTICE",
+    "payload": {
+      "notification_id": "ntf:TRANSFER_NOTICE:evt-d5c81dab-f114-4a0d-81c8-c9b2b385b752:mom-yu",
+      "child_id": "child-yu",
+      "kind": "TRANSFER_NOTICE",
+      "to_person_id": "mom-yu",
+      "ref_id": "evt-d5c81dab-f114-4a0d-81c8-c9b2b385b752",
+      "ack_deadline": "2026-09-25T07:30:00.000Z",
+      "transfer_id": "tr-1"
+    }
+  },
+  {
+    "event_id": "evt-8ecae6b0-f56d-44fc-bba5-13fc0ce7ba5f",
+    "event_type": "CHILD_CHECKED_OUT",
+    "aggregate_type": "site_session",
+    "aggregate_id": "sess-b",
+    "occurred_at": "2026-09-25T16:45:00+08:00",
+    "recorded_at": "2026-09-25T22:23:57.094Z",
+    "version": 3,
+    "summary": "交付儿童 child-yu 给 grandpa-yu",
+    "payload": {
+      "session_id": "sess-b",
+      "child_id": "child-yu",
+      "handed_to": {
+        "type": "PERSON",
+        "person_id": "grandpa-yu"
+      },
+      "released_by": "staff-zhao",
+      "note": null,
+      "stable_id": "checkout:sess-b:child-yu",
+      "status": "EFFECTIVE",
+      "decision_basis": {
+        "matched": "DELEGATE",
+        "matched_source": "DELEGATION",
+        "guardianship_version": 1,
+        "delegation_version": 1,
+        "temp_change_ids": [],
+        "no_release_checked": []
+      }
+    }
+  },
+  {
+    "event_id": "evt:ntf:PICKUP_CONFIRMATION:evt-8ecae6b0-f56d-44fc-bba5-13fc0ce7ba5f:mom-yu",
+    "event_type": "NOTIFICATION_SENT",
+    "aggregate_type": "notification",
+    "aggregate_id": "ntf:PICKUP_CONFIRMATION:evt-8ecae6b0-f56d-44fc-bba5-13fc0ce7ba5f:mom-yu",
+    "occurred_at": "2026-09-25T16:45:00+08:00",
+    "recorded_at": "2026-09-25T22:23:57.094Z",
+    "version": 1,
+    "summary": "通知 mom-yu：PICKUP_CONFIRMATION",
+    "payload": {
+      "notification_id": "ntf:PICKUP_CONFIRMATION:evt-8ecae6b0-f56d-44fc-bba5-13fc0ce7ba5f:mom-yu",
+      "child_id": "child-yu",
+      "kind": "PICKUP_CONFIRMATION",
+      "to_person_id": "mom-yu",
+      "ref_id": "evt-8ecae6b0-f56d-44fc-bba5-13fc0ce7ba5f",
+      "ack_deadline": "2026-09-25T09:15:00.000Z",
+      "session_id": "sess-b",
+      "delivered_to": "grandpa-yu"
+    }
+  }
+]
